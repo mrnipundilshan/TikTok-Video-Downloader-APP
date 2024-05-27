@@ -5,6 +5,22 @@ class homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    TextEditingController _LinkTextController = TextEditingController();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("TikTok Downloader"),
+      ),
+      body: Column(
+        children: [
+          TextField(
+            controller: _LinkTextController,
+            decoration: const InputDecoration(
+              label: Text("Paste URL"),
+            ),
+            cursorColor: Colors.white,
+          )
+        ],
+      ),
+    );
   }
 }
