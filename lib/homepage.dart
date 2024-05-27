@@ -18,7 +18,11 @@ class homepage extends StatelessWidget {
               label: Text("Paste URL"),
             ),
             cursorColor: Colors.white,
-          )
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          ElevatedButton(onPressed: () {}, child: const Text("Download")),
         ],
       ),
     );
